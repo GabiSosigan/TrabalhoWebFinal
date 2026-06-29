@@ -1,0 +1,179 @@
+* {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    background-color: #253147;
+    color: #ffffff;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* --- Header e navegação --- */
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    color: #90f6d7;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #41506b;
+    border-radius: 8px;
+}
+
+nav a {
+    color: #90f6d7;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: larger;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(144, 246, 215, 0.1);
+}
+
+nav .active {
+    background-color: #35bcbf;
+    color: #263849;
+}
+
+/* --- Conteúdo principal --- */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #41506b;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.intro ul {
+    padding: 0;
+    margin: 15px 0 0 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1%;
+}
+
+.intro li {
+    background-color: #35bcbf;
+    color: #263849;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Foto de perfil --- */
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #41506b;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.perfil img {
+    width: 200px;
+    height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #35bcbf;
+}
+
+.perfil h2 {
+    color: #90f6d7;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.perfil p {
+    text-align: center;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+/* --- Estilização do rodapé --- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #41506b;
+    border-radius: 8px;
+}
+
+.footer a {
+    color: #90f6d7;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: larger;
+    transition: background-color 0.3s;
+}
+
+.footer a:hover {
+    background-color: rgba(144, 246, 215, 0.1);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .intro {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .perfil {
+        width: 100%;
+    }
+
+    .footer {
+        gap: 15px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,197 @@
+* {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3dd4d6;
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    background-color: #253147;
+    color: #ffffff;
+}
+
+/* Header e navegação */
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    color: #90f6d7;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #41506b;
+    border-radius: 8px;
+}
+
+nav a {
+    color: #90f6d7;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: larger;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(144, 246, 215, 0.1);
+}
+
+nav .active {
+    background-color: #35bcbf;
+    color: #263849;
+}
+
+/* Conteúdo principal */
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.main h1 {
+    color: #90f6d7;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #41506b;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #41506b;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.desenhos {
+    column-count: 1;
+    column-gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.desenhos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    border-radius: 8px;
+    border: 3px solid #35bcbf;
+}
+
+/* Zoom das imagens */
+
+.zoom {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.ampliar {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.botao-fechar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.img-zoom {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.img-zoom:hover {
+    transform: scale(1.02);
+}
+
+/* Estilização do rodapé */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #41506b;
+    border-radius: 8px;
+}
+
+.footer a {
+    color: #90f6d7;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: larger;
+    transition: background-color 0.3s;
+}
+
+.footer a:hover {
+    background-color: rgba(144, 246, 215, 0.1);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    @media (max-width: 600px) {
+        .galeria-pinterest {
+            column-count: 1;
+        }
+    }
+
+    .footer {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+}
