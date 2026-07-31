@@ -1,4 +1,4 @@
-# TrabalhoWebFinal
-Observação: O trabalho final também está no outro repositório junto com as atividades. Criei esse repositório apenas para colocar no Github Pages.
+# Portfólio
+Tecnologias utilizadas: HTML, CSS e JavaScript
 
-URL: https://gabisosigan.github.io/TrabalhoWebFinal/
+URL: https://gabisosigan.github.io/Portfolio/
